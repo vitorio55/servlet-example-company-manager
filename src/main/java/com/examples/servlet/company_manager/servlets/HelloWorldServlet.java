@@ -1,4 +1,4 @@
-package br.com.alura.gerenciador.servlet;
+package com.examples.servlet.company_manager.servlets;
 
 import java.io.IOException;
 

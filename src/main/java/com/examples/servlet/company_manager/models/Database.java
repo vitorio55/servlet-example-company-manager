@@ -1,4 +1,4 @@
-package br.com.alura.gerenciador.servlet.entities;
+package com.examples.servlet.company_manager.models;
 
 import java.util.ArrayList;
 import java.util.List;

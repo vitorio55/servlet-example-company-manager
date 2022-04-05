@@ -1,4 +1,4 @@
-package br.com.alura.gerenciador.servlet;
+package com.examples.servlet.company_manager.servlets;
 
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
@@ -9,8 +9,9 @@ import java.io.PrintWriter;
 import java.util.List;
 import java.util.stream.Collectors;
 
-import br.com.alura.gerenciador.servlet.entities.Company;
-import br.com.alura.gerenciador.servlet.entities.Database;
+import com.examples.servlet.company_manager.models.Company;
+import com.examples.servlet.company_manager.models.Database;
+
 import jakarta.servlet.RequestDispatcher;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;

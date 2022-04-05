@@ -1,10 +1,11 @@
-package br.com.alura.gerenciador.servlet;
+package com.examples.servlet.company_manager.servlets;
 
 import jakarta.servlet.http.HttpServlet;
 import java.io.IOException;
 
-import br.com.alura.gerenciador.servlet.entities.Company;
-import br.com.alura.gerenciador.servlet.entities.Database;
+import com.examples.servlet.company_manager.models.Company;
+import com.examples.servlet.company_manager.models.Database;
+
 import jakarta.servlet.RequestDispatcher;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;

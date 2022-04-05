@@ -1,4 +1,4 @@
-package br.com.alura.gerenciador.servlet;
+package com.examples.servlet.company_manager.servlets;
 
 import jakarta.servlet.http.HttpServlet;
 import java.io.IOException;
@@ -6,8 +6,9 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-import br.com.alura.gerenciador.servlet.entities.Company;
-import br.com.alura.gerenciador.servlet.entities.Database;
+import com.examples.servlet.company_manager.models.Company;
+import com.examples.servlet.company_manager.models.Database;
+
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServletRequest;

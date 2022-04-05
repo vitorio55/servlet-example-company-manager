@@ -2,7 +2,7 @@
 	pageEncoding="ISO-8859-1"%>
 
 <%@ page
-	import="java.util.List,br.com.alura.gerenciador.servlet.entities.Company"%>
+	import="java.util.List,com.examples.servlet.company_manager.models.Company"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
 

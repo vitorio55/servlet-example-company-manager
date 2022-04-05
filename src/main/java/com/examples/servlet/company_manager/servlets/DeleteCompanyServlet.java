@@ -1,4 +1,4 @@
-package br.com.alura.gerenciador.servlet;
+package com.examples.servlet.company_manager.servlets;
 
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
@@ -8,7 +8,7 @@ import jakarta.servlet.http.HttpServletResponse;
 
 import java.io.IOException;
 
-import br.com.alura.gerenciador.servlet.entities.Database;
+import com.examples.servlet.company_manager.models.Database;
 
 @WebServlet("/deleteCompany")
 public class DeleteCompanyServlet extends HttpServlet {
