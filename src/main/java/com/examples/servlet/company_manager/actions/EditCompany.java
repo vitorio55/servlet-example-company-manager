@@ -1,6 +1,5 @@
-package com.examples.servlet.company_manager.servlets;
+package com.examples.servlet.company_manager.actions;
 
-import jakarta.servlet.http.HttpServlet;
 import java.io.IOException;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -10,17 +9,15 @@ import com.examples.servlet.company_manager.models.Company;
 import com.examples.servlet.company_manager.models.Database;
 
 import jakarta.servlet.ServletException;
-import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 
-@WebServlet("/editCompany")
-public class EditCompanyServlet extends HttpServlet {
-	private static final long serialVersionUID = 1L;
+public class EditCompany extends Action {
 
-	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+	public void execute(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		Integer pId = Integer.valueOf(request.getParameter("id"));
 		String pName = request.getParameter("name");
+		System.out.println("Editing company with name " + pName + " and id " + pId + "...");
 
 		SimpleDateFormat format = new SimpleDateFormat("dd/MM/yyyy"); 
 		Date pEstablishedDate;
@@ -37,7 +34,6 @@ public class EditCompanyServlet extends HttpServlet {
 		newCompanyData.setName(pName);
 		db.editCompany(pId, newCompanyData);
 
-		response.sendRedirect("listCompanies");
+		setRedirect("entry?action=ListCompanies");
 	}
-
 }
