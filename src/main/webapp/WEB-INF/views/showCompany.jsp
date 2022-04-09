@@ -7,6 +7,7 @@
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 
 <c:url value="/entry?action=EditCompany" var="linkEditCompany"/>
+<c:url value="/entry?action=ListCompanies" var="linkListCompanies"/>
 
 <!DOCTYPE html>
 <html>
@@ -15,8 +16,9 @@
 <title>Edit company</title>
 </head>
 <body>
+	<c:import url="pageHeaderPartial.jsp"/>
 
-	<a href="listCompanies">List registered companies</a>
+	<a href="${linkListCompanies}">List registered companies</a>
 
 	<h2>Edit company:</h2>
 

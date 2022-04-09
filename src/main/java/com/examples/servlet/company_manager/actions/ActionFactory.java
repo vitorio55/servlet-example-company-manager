@@ -16,6 +16,12 @@ public class ActionFactory {
 			action = new CreateCompany();
 		} else if (actionName.equals("FormCreateCompany")) {
 			action = new FormCreateCompany();
+		} else if (actionName.equals("FormLogin")) {
+			action = new FormLogin();
+		} else if (actionName.equals("Login")) {
+			action = new Login();
+		} else if (actionName.equals("Logout")) {
+			action = new Logout();
 		}
 		return action;
 	}

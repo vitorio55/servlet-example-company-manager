@@ -10,6 +10,7 @@
 <title>New company</title>
 </head>
 <body>
+	<c:import url="pageHeaderPartial.jsp"/>
 
 	<a href="${linkListCompanies}">List registered companies</a>
 
