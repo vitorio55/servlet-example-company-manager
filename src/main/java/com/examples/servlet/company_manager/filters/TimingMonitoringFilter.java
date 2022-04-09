@@ -1,4 +1,4 @@
-package com.examples.servlet.company_manager.servlets.filters;
+package com.examples.servlet.company_manager.filters;
 
 import java.io.IOException;
 

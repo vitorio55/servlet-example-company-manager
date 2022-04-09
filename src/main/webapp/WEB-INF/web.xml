@@ -7,7 +7,7 @@
 
 	<filter>
 		<filter-name>TMF</filter-name>
-		<filter-class>com.examples.servlet.company_manager.servlets.filters.TimingMonitoringFilter</filter-class>
+		<filter-class>com.examples.servlet.company_manager.filters.TimingMonitoringFilter</filter-class>
 	</filter>
 	<filter-mapping>
 		<filter-name>TMF</filter-name>
@@ -16,7 +16,7 @@
 
 	<filter>
 		<filter-name>AF</filter-name>
-		<filter-class>com.examples.servlet.company_manager.servlets.filters.AuthorizationFilter</filter-class>
+		<filter-class>com.examples.servlet.company_manager.filters.AuthorizationFilter</filter-class>
 	</filter>
 	<filter-mapping>
 		<filter-name>AF</filter-name>
@@ -25,7 +25,7 @@
 
 	<filter>
 		<filter-name>CF</filter-name>
-		<filter-class>com.examples.servlet.company_manager.servlets.filters.ControllerFilter</filter-class>
+		<filter-class>com.examples.servlet.company_manager.filters.ControllerFilter</filter-class>
 	</filter>
 	<filter-mapping>
 		<filter-name>CF</filter-name>
